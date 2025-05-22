@@ -216,6 +216,17 @@ ul.timeline > li{
   font-weight: 500;
 }
 
+.sub-ribbon {
+  background-color: #06ca99; /* Coral color, adjust as needed */
+  color: white;
+  padding: 1.5px 14px;
+  display: inline-block;
+  position: relative;
+  font-size: 10pt;
+  font-weight: 500;
+}
+
+
 .ribbon::after {
   content: '';
   position: absolute;
@@ -228,6 +239,18 @@ ul.timeline > li{
   border-left: 12px solid #0699ca; 
 }
 
+.sub-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 12px solid #06ca99; 
+}
+
 .time-bg {
   border-left: 5px solid #0699ca;
   border-top: 1px solid #0699ca;
@@ -237,6 +260,18 @@ ul.timeline > li{
   padding: 2px 14px;
   font-size: 10pt;
   font-weight: 500;
+}
+
+.sub-time-bg {
+  border-left: 5px solid #06ca99;
+  border-top: 1px solid #06ca99;
+  border-bottom: 1px solid #06ca99;
+  margin-right: -10px;
+  border-radius: 5px;
+  padding: 2px 14px;
+  font-size: 10pt;
+  font-weight: 500;
+  margin-left: 20px;
 }
 
 ul.schelude > li{  
